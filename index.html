@@ -1,11 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/my-report-app/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>my-report-app</title>
-    <script type="module" crossorigin src="/my-report-app/assets/index-DPvEtwUL.js"></script>
+    <title>会计师事务所报告</title>
+    
+    <!-- ✅ 关键：引入 Tailwind CSS 样式库，没有这一行网页就会变丑 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+      /* 修复打印时的字体显示 */
+      @media print {
+        body { -webkit-print-color-adjust: exact; }
+      }
+    </style>
+    <script type="module" crossorigin src="/my-report-app/assets/index-DzWf8jnp.js"></script>
     <link rel="stylesheet" crossorigin href="/my-report-app/assets/index-Dtn62Xmo.css">
   </head>
   <body>
